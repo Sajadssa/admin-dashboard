@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Dashboard Using HTML and CSS and Javascript</title>
+    <!-- MATERIAL ICON CDN-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- STYLESHEET  -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="https://cdn.freebiesupply.com/logos/large/2x/esteghlal-fc-1-logo-svg-vector.svg"
+                        alt="This is logo svg">
+                    <h2>SSA <span class="danger">IRA</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span class="material-icons-sharp">close</span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href=" #">
+                    <span class="material-icons-sharp">grid_view</span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href=" #" class="active">
+                    <span class="material-icons-sharp">person_outline</span>
+                    <h3>Customers</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">receipt_long</span>
+                    <h3>Orders</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">insights</span>
+                    <h3>Analytics</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">mail_outline</span>
+                    <h3>Messages</h3>
+                    <span class="message-count">24</span>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">inventory</span>
+                    <h3>Products</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">report_gmailerrorred</span>
+                    <h3>Reports</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">settings</span>
+                    <h3>Settings</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Products</h3>
+                </a>
+                <a href=" #">
+                    <span class="material-icons-sharp">logout</span>
+                    <h3>Logout</h3>
+                </a>
+            </div>
+        </aside>
+        <!-- ---------------END OF ASIDE----------- -->
+        <!-- START OF MAIN -->
+        <main>
+            <h1>Dashboard</h1>
+            <div class="date">
+
+                <input type="date">
+            </div>
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <!-- emmet .middle>.left -->
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>$274,025</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>74%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- ------END OF SALES------------ -->
+                <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <!-- emmet .middle>.left -->
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>$15,12</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>67%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- ------END OF EXPENSES------------ -->
+                <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <!-- emmet .middle>.left -->
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>$35,125</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx='38' cy='38' r='36'></circle>
+                            </svg>
+                            <div class="number">
+                                <p>48%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">
+                        Last 24 Hours
+                    </small>
+                </div>
+                <!-- ------END OF INCOME------------ -->
+            </div>
+            <!-- -------END OF INSIGHTS --------------->
+            <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Product Number</th>
+                            <th>Payment</th>
+                            <th>Status</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Foldable mini Drone</td>
+                            <td>8412431</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <!-- emmet:td.primary{Details} -->
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini Drone</td>
+                            <td>8412431</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <!-- emmet:td.primary{Details} -->
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini Drone</td>
+                            <td>8412431</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <!-- emmet:td.primary{Details} -->
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini Drone</td>
+                            <td>8412431</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <!-- emmet:td.primary{Details} -->
+                            <td class="primary">Details</td>
+                        </tr>
+                        <tr>
+                            <td>Foldable mini Drone</td>
+                            <td>8412431</td>
+                            <td>Due</td>
+                            <td class="warning">Pending</td>
+                            <!-- emmet:td.primary{Details} -->
+                            <td class="primary">Details</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        </main>
+        <!-- END OF MAIN -->
+        <!-- emmet: .right>.top>button #menu-btn-->
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span class="material-icons-sharp">menu</span>
+                </button>
+                <div class="theme-toggler">
+                    <span class="material-icons-sharp active">light_mode</span>
+                    <span class="material-icons-sharp">dark_mode</span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Hey,<b>Sajjad</b></p>
+                        <small class="text-muted">Admin</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="https://cdn.dribbble.com/users/10109794/avatars/normal/data?1639421203" alt="">
+                    </div>
+                </div>
+            </div>
+            <!-- END OF TOP -->
+            <div class="recent-updates">
+                <h2>Recent Update</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://th.bing.com/th/id/OIP.MYnO-kxsaWoWAAbp4ClrIQHaGR?w=257&h=217&c=7&r=0&o=5&pid=1.7"
+                                alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Mary jones</b>received his order of Night lion tech GPS drone</p>
+                            <small class="text-muted">
+                                2 Minutes Ago
+                            </small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://th.bing.com/th/id/R.cf4c04a56f915f062981eb9db2588c8e?rik=qgi5GGh1nurM4w&riu=http%3a%2f%2fimages6.fanpop.com%2fimage%2fpolls%2f1120000%2f1120027_1348184354076_full.jpg%3fv%3d1348184643&ehk=tmBOVZvczdKeAoxn1iem1H1mOWViUBEfmyF%2bltPMvkI%3d&risl=&pid=ImgRaw&r=0"
+                                alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Melisa Aviro</b>declined her order 2 DIA air condition</p>
+                            <small class="text-muted">
+                                7 Minutes Ago
+                            </small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="https://th.bing.com/th/id/OIP.UDN-YqIP_-RG6y_9kEOFtAHaFj?pid=ImgDet&rs=1" alt=" ">
+                        </div>
+                        <div class="message ">
+                            <p><b>David Camron</b>received his order of Dry Machine samsung</p>
+                            <small class="text-muted ">
+                                12 Minutes Ago
+                            </small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- END OF RECENT UPDATES -->
+            <div class="sales-analytics">
+                <div class="item online">
+                    <div class="icon">
+                        <span class="material-icons-sharp">shopping_cart</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+
+                            <h3>ONLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5>
+                            <h5 class="success">+45%</h5>
+                            <h3>3789</h3>
+                        </h5>
+                    </div>
+                </div>
+                <div class="item offline">
+                    <div class="icon">
+                        <span class="material-icons-sharp">local_mall</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+
+                            <h3>OFFLINE ORDERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5>
+                            <h5 class="danger">-14%</h5>
+                            <h3>1200</h3>
+                        </h5>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span class="material-icons-sharp">person</span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+
+                            <h3>NEW CUSTOMERS</h3>
+                            <small class="text-muted">Last 24 Hours</small>
+                        </div>
+                        <h5>
+                            <h5 class="success">+27%</h5>
+                            <h3>147</h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <span class="material-icons-sharp">add</span>
+                    <h3>Add Product</h3>
+                </div>
+            </div>
+        </div>
+        <script  src="index.js"></script>
+        <script  src="orders.js"></script>
+</body>
+
+
+</html>
